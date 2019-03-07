@@ -9,7 +9,6 @@ import { exposePluginConfig } from 'girder/utilities/PluginUtils';
 import PluginConfigBreadcrumbWidget from 'girder/views/widgets/PluginConfigBreadcrumbWidget';
 
 import dsaConfigTemplate from './templates/digitalSlideArchiveConfig.pug';
-
 /**
  * Show the Digital Slide Archive config settings.  This includes the TCGA
  * Ingest settings (which is really an ingest control).
@@ -49,7 +48,7 @@ var ConfigView = View.extend({
         this.$el.html(dsaConfigTemplate({}));
         if (!this.breadcrumb) {
             this.breadcrumb = new PluginConfigBreadcrumbWidget({
-                pluginName: 'Digital Slide Archive',
+                pluginName: '深圳博思微视医疗科技有限公司',
                 el: this.$('.g-config-breadcrumb-container'),
                 parentView: this
             }).render();
